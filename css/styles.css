@@ -159,6 +159,7 @@ body {
     background-color: var(--thirty-bg-color);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .portfolio-menu .current {
