@@ -13,8 +13,6 @@ body {
     color: var(--primery-text-color);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
@@ -27,10 +25,13 @@ body {
     text-decoration: none;
 }
 
+.link:hover,
+.link:focus {
+    color: var(--accent-text-color);
+}
+
 .section-title {
     color: var(--title-text-color);
-    font-family: Roboto;
-    font-weight: 700;
     font-size: 36px;
     line-height: inherit;
     text-align: center;
@@ -45,40 +46,33 @@ body {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
-    text-decoration: none;
 }
 
 .logo-accent {
     color: var(--accent-text-color);
 }
 
-.site-nav .link {
+.site-nav-link {
     color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 } 
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
     color: var(--accent-text-color);
 }
 
-.site-nav .current {
+.current {
     color: var(--accent-text-color);
 }
 
-.site-contacts .link {
+.site-link {
     color: var(--primery-text-color);
-    font-style: normal;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-
-.site-contacts .link:hover,
-.site-contacts .link:focus {
-    color: var(--accent-text-color);
 }
 
 /*--------------------HERO-------------------*/
@@ -90,13 +84,15 @@ body {
 .hero-title {
     color: var(--white-text-color);
     font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
     text-align: center;
+    text-transform: uppercase;
 }
 
-.btn {
+.hero-btn {
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
-    font-family: 'Roboto';
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -108,21 +104,17 @@ body {
     border-radius: 4px;   
 }
 
-.btn:hover,
-.btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
     background: #188CE8;
 }
 
-/*---------------------OUR FEATURES-------------------*/
+/*---------------------SECTION-------------------*/
 
-.features-subtitle {
+.features-title {
     color: var(--title-text-color);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
@@ -132,7 +124,7 @@ body {
     background-color: var(--thirty-bg-color);
 }
 
-.subtitle {
+.our-team-title {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -140,18 +132,18 @@ body {
     text-align: center;
 }
 
-.team-profession {
+.our-team-text {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+    font-weight: 400;
 }
+
 
 /*---------------------PORTFOLIO-------------------*/
 
-.portfolio-btn {
+.filter-btn {
     color: var(--title-text-color);
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -162,20 +154,15 @@ body {
     cursor: pointer;
 }
 
-.portfolio-menu .current {
-    color: var(--white-text-color);
-    background-color: var(--accent-text-color);
-}
-
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
-.portfolio-subtitle {
+.portfolio-title {
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2.0;
@@ -187,31 +174,26 @@ body {
     line-height: 1.87;
 }
 
-
 /*---------------------FOOTER-------------------*/
 
 .footer {
     background-color: var(--secondary-bg-color);
 }
+
 .footer .logo {
     color: var(--white-text-color);
 }
 
-.site-contacts .address,
-.site-contacts .footer-link {
+.site-contacts {
+    font-style: normal;
     font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
-.site-contacts .address {
+.site-address {
     color: var(--white-text-color);
 }
 
-.site-contacts .footer-link {
+.site-contact {
+    letter-spacing: 0.03;
     color: rgba(255, 255, 255, 0.6);
 }
-
-
-
-
